@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet2.css"/>
+		<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+		<title>Home</title>
+	</head>
+	<body>	
+		<!-- <h2 id="header">Das ist Header</h2> -->
+		<div id="header">
+			<img src="src\header.png" alt="Warframe" >
+			<div class="link_group">
+				<a class="show_popup" rel="reg_form" href="#">LogIn</a>
+				<a class="show_popup" rel="photo_win" href="#">SignUp</a>
+			</div>
+			<!-- <ul class="headmenu">
+				<li><a href="#">Teach me</a>
+					<ul class="submenu">
+						<li><a href="#">noob</a></li>
+						<li><a href="#">lucker</a></li>
+						<li><a href="#">pro</a></li>
+					</ul>
+				</li>
+			</ul> -->
+		</div>
+		<div id="navbar">
+			<a href="home.html" class="navButton">Home</a>
+			<a href="registration.html" class="navButton">Registration</a>
+			<a href="#" class="navButton">Alerts</a>
+			<a href="#" class="navButton">Contacts</a>
+		</div>
+		
+		<div class="popup reg_form">
+			<a class="close" href="#">Close</a>
+			<h2>Регистрация на сайте</h2>
+			<form method="post" action="">
+				<label for="login">Введите логин:</label>
+				<input type="text" name="login" />
+				<label for="password">Введите пароль:</label>
+				<input type="password" name="password" />
+				<input type="submit" value="Войти" />	
+			</form>
+		</div>
+		<div class="popup photo_win">
+			<a class="close" href="#">Close</a>
+			<h2>Галерея</h2>
+			<div class="img_wrap">
+				<img alt="" src="/images/pic_1.png" />
+				<img alt="" src="/images/pic_2.png" />
+				<img alt="" src="/images/pic_3.png" />
+				<img alt="" src="/images/pic_2.png" />
+				<img alt="" src="/images/pic_3.png" />				
+				<img alt="" src="/images/pic_1.png" />				
+			</div>
+		</div>
+		
+		<div id="left">
+			<h1><font color="orange">W</font>elcome to the <font color="orange">tenno</font> registry, warrior.</h1>
+			<div id="slider-wrap">
+			<div id="slider">
+				<div class="slide">
+					<img src="src\ico.jpg">
+				</div>
+				<div class="slide">
+					<img src="src\1.png">
+				</div>
+				<div class="slide">
+					<img src="src\2.jpg">
+				</div>
+				<div class="slide">
+					<img src="src\3.jpg">
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id="right">
+			<h3>Sidebar</h3>
+			<ol>
+				<li>first</li>
+				<li>second</li>
+				<li>third</li>
+			</ol>
+		</div>
+		<div id="footer">
+			<label>Copyrights</label>
+			<ul class="last">
+				<li>thx to ASUS</li>
+				<li>Made by ilita-group</li>
+				<li><img class="pic" src="src/logo.png" alt="тут могла быть ваша реклама"></li>
+			</ul>
+		</div>
+	</body>
+</html>
