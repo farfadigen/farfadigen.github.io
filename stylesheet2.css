@@ -1,5 +1,5 @@
 html{
-		
+	height: 120%;
 }
 
 body {
@@ -30,34 +30,45 @@ body {
 }
 
 .headmenu{
-	float:left;
-	width: 10%;
-	top: 30px;
-	left: 7%;
-	padding: 30px;
+	clear: both;
+	padding-top: 10%;
+	margin-left:25%;
 }
 .headmenu li{
-	width: 100%;
+	display: inline-block;
+	color: white;
+	background-color: #5CACEE;
+	font-weight: 700;
+	text-decoration: none;
+	padding: .5em 2em;
+	outline: none;
+	border: 2px solid;
+	border-radius: 3px;
+	transition: 0.2s;
+	
+	/*padding: .5em 2em;
 	text-align: center;
-	border-radius: 2px;
+	border-radius: 2px;*/
 }
 .headmenu li:hover{
 	color: black;
 	background-color: orange;
 }
 .headmenu li a{
-	text-decoration:none;
+	text-decoration: none;
 	color: white;
 }
 .submenu{
 	position: absolute;
 	display: none;
-	width: 50%;
-	top: 75px;
-	right: 53px;
+	top: 23.7%;
+	left: 34%;
+	z-index: 5;
 }
 .submenu li{
-	top: -1px;
+	display: block;
+	width: 40%;
+	z-index: 5;
 }
 .submenu li:hover{
 	color: black;
@@ -169,7 +180,6 @@ a.navButton:active {
 	display:none;
 	overflow:hidden;
 	border:1px solid #ccc;
-	background:#A4D3EE;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
 	border-radius:15px;
@@ -195,6 +205,7 @@ a.navButton:active {
 .log_form {
 	margin-left:-200px;
 	width:400px;
+	background: #6495ED;
 }
 .log_form form {
 	margin-top:10px;
@@ -240,6 +251,7 @@ a.navButton:active {
 .reg_form {
 	margin-left:-200px;
 	width:400px;
+	background: #DAA520;
 }
 .reg_form form {
 	margin-top:10px;
@@ -262,7 +274,7 @@ a.navButton:active {
 	border:1px solid #ccc;
 }
 .reg_form input[type=submit] {
-	color: #00688B;
+	color: #000;
 	text-decoration: none;
 	padding: 3px 2px;
 	background: #5CACEE;
@@ -282,6 +294,27 @@ a.navButton:active {
 	background: #EEC900;
 }
 
+.avatar img{
+	border: 2px solid #A52A2A;
+	border-radius: 10px;
+	width: 250px;
+	float: left;
+	margin-right: 20px;
+}
+.info{
+	font-size: 1.5em;
+	text-align: left;
+}
+.avachng{
+	clear: both;
+	text-align: left;
+	display: block;
+}
+.usredit p,.regButton{
+	text-align: left;
+	display: block;
+}
+
 #overlay {
 width:100%;
 height:100%;
@@ -293,17 +326,12 @@ background:#000;
 opacity:.8;
 }
 
-ol{
-	list-style-type: none;
-}
-
-ul{
+.last {
 	list-style-type: none;
 	position: relative;
 	margin: -10px;
 }
-
-ul li {
+.last li {
 	display: inline-block;
 	border: 2px solid #000000;
 	font-family: Futura, Tahoma, sans-serif;
@@ -313,16 +341,6 @@ ul li {
 	background-color: #cc0323;
 }
 
-ol li{
-	display: block;
-	border: 1px solid #ffffff;
-	font-family: Futura, Tahoma, sans-serif;
-	color: #ffffff;
-	padding: 3px;
-	border-radius: 2px 2px;
-	background-color: #ff6600;
-}
-
 #left{
 	width: 75%;
 	float: left;
@@ -330,6 +348,60 @@ ol li{
 	color: #828282;
 	font-family: monospace;
 	font-size: 120%;
+}
+#left ul{
+	text-align: left;
+	color: #DAA520;
+	padding-left: 20%;
+	font-size: 120%;
+}
+#left ul li{
+	
+	
+}
+.history img{
+	width: 40%;
+	float: left;
+	border: 2px solid orange;
+	border-radius: 10px 10px;
+}
+
+.alert{
+	position: relative;
+	text-align: left;
+	clear: both;
+	width: 75%;
+	padding: 5px;
+	left: 15%;
+	/*right: 10%;*/
+	border: #FF8C00 solid 1px;
+	height: 150px;
+	margin-bottom: 15px;
+}
+.alert-img{
+	position: relative;
+	float: left;
+	width: 150px;
+	height: 150px;
+	border: #828282 solid .5px;
+}
+.alert-img img{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.alert-content{
+	position: relative;
+	text-align: left;
+	padding-top: 30px;
+	left: 5px;
+	height: 100%;
+}
+.alert-executor{
+	float: right;
+	position: relative;
+	height: 35px;
+	width: 100%;
 }
 
 #slider-wrap{ /* Оболочка слайдера и кнопок */
@@ -419,15 +491,43 @@ p {
 #right{
 	width: 25%;
 	float: right;
+	
+}
+#right ol{
+	list-style-type: none;
+	padding-left: 25%;
+	
+}
+#right ol li{
+	display: block;
+	width: 65%;
+	border: 1px solid #ffffff;
+	font-family: Futura, Tahoma, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	padding: 3px;
+	border-radius: 2px 2px;
+	background-color: #ff6600;
+}
+#right ol li:hover{
+	color: #B22222;
+	background-color: #D2B48C;
+}
+#right ol li a{
+	text-decoration: none;
+	color: inherit;
+	text-align: inherit;
+}
+.admin li form input[type=text],input[type=password],select{
+	width: 100%;
 }
 
 #footer{
-	bottom: -20px;
+	bottom: -32px;
 	clear: both;
 	font-family: fantasy;
 	width: 100%;
-	position: relative;
-	
+	position: fixed;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	height: 75px;

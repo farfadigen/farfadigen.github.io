@@ -1,4 +1,4 @@
-﻿var hwSlideSpeed = 700;
+var hwSlideSpeed = 700;
 var hwTimeOut = 3000;
 var hwNeedLinks = true;
  
@@ -76,7 +76,7 @@ $(function () {
 	});
 	
 	//script for tabs
-	$("div.selectTabs").each(function () {
+	/*$("div.selectTabs").each(function () {
 		var tmp = $(this);
 		$(tmp).find(".lineTabs li").each(function (i) {
 			$(tmp).find(".lineTabs li:eq("+i+") a").click(function(){
@@ -88,5 +88,5 @@ $(function () {
 				return false;
 			});
 		});
-	});
+	});*/
 });

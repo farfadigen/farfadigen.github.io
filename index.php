@@ -22,11 +22,11 @@
 	</div>
 </div>
 <div id="right">
-	<h3>Sidebar</h3>
+	<h3>NavMap</h3>
 	<ol>
-		<li>first</li>
-		<li>second</li>
-		<li>third</li>
+		<li><a href="tenno.php">Who are tenno</a></li>
+		<li><a href="alerts.php">What do we do</a></li>
+		<li><a href="factions.php">Who we fight with</a></li>
 	</ol>
 </div>
 <?php
